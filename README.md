@@ -2,7 +2,19 @@
   <img src="https://github.com/user-attachments/assets/02a7bd81-ee10-4cf1-aef9-c0649a03a4ea" width="200">
 </p>
 
-<h1 align="center">Active Directory Security Lab</h1>
+<h1 align="center">
+────────────────────────────
+
+Active Directory Security Lab
+
+Enterprise Identity Environment
+Windows Security Telemetry
+Splunk Integration
+
+Status: Active Development
+
+────────────────────────────
+</h1>
 
 ## Overview
 
