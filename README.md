@@ -1,6 +1,27 @@
-# ad-lab
-Hands-on Active Directory lab focused on identity management, access control, and authentication behavior in a Windows domain environment.
+# Project Name
 
-This repository documents the setup and operation of a Windows Active Directory lab used to simulate enterprise identity and access management scenarios.
+## Overview
+Brief description of what this project is.
 
-The lab is used to explore user provisioning, group-based access control, authentication events, and privilege escalation concepts relevant to both IAM and SOC roles.
+## Objective
+What I wanted to learn or demonstrate.
+
+## Tools Used
+- Splunk Enterprise
+- Windows Server / Active Directory
+- Windows 10 Endpoint
+- Kali Linux
+- Sysmon / Windows Event Logs
+
+## Skills Demonstrated
+- Log analysis
+- SPL searching
+- Detection logic
+- Dashboard creation
+- Authentication event analysis
+
+## Project Status
+In progress
+
+## Notes
+This project is part of my cybersecurity engineering portfolio focused on SIEM, identity, and detection engineering.
