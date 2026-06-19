@@ -3,6 +3,9 @@
 </p>
 
 <h1 align="center">Active Directory Security Lab</h1>
+<p align="center">
+Enterprise Active Directory environment built for identity, security monitoring, and Splunk engineering.
+</p>
 
 ## Overview
 
