@@ -1,5 +1,6 @@
-<img width="1254" height="1254" alt="CWSECLogo" src="https://github.com/user-attachments/assets/64cb0f2a-5973-4d05-aa31-f3b75e3ec04e" />
-
+<p align="center">
+  <img src="[images/logo.png"](https://github.com/user-attachments/assets/64cb0f2a-5973-4d05-aa31-f3b75e3ec04e") width="175">
+</p>
 
 # Active Directory Security Lab
 
