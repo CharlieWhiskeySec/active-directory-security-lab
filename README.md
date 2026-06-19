@@ -3,9 +3,7 @@
 </p>
 
 <h1 align="center">
-────────────────────────────
 Active Directory Security Lab
-────────────────────────────
 </h1>
 
 ## Overview
