@@ -1,27 +1,40 @@
-# Project Name
+# Active Directory Security Lab
 
 ## Overview
-Brief description of what this project is.
 
-## Objective
-What I wanted to learn or demonstrate.
+This project documents my Active Directory home lab, built to develop hands-on experience with enterprise identity infrastructure, Windows event logging, and Splunk-based security monitoring.
 
-## Tools Used
-- Splunk Enterprise
-- Windows Server / Active Directory
-- Windows 10 Endpoint
-- Kali Linux
-- Sysmon / Windows Event Logs
+The environment serves as the foundation for my SIEM engineering and detection engineering projects, allowing me to simulate authentication activity, collect Windows Security logs, build SPL searches, create dashboards, and develop real-world detection use cases.
+
+---
+
+## Objectives
+
+- Build and administer an Active Directory domain
+- Generate Windows Security events for analysis
+- Forward logs into Splunk Enterprise
+- Practice SIEM engineering and detection development
+- Create dashboards, reports, and investigations based on real telemetry
+
+---
+
+## Environment
+
+| Component | Technology |
+|-----------|------------|
+| Domain Controller | Windows Server |
+| Endpoint | Windows 10 |
+| SIEM | Splunk Enterprise |
+| Attacker VM | Kali Linux |
+| Hypervisor | VirtualBox |
+
+---
 
 ## Skills Demonstrated
-- Log analysis
-- SPL searching
-- Detection logic
-- Dashboard creation
-- Authentication event analysis
 
-## Project Status
-In progress
-
-## Notes
-This project is part of my cybersecurity engineering portfolio focused on SIEM, identity, and detection engineering.
+- Active Directory administration
+- Windows Event Log analysis
+- Splunk SPL
+- Dashboard development
+- Authentication monitoring
+- Detection engineering
