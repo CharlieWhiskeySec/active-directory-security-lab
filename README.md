@@ -4,15 +4,7 @@
 
 <h1 align="center">
 ────────────────────────────
-
 Active Directory Security Lab
-
-Enterprise Identity Environment
-Windows Security Telemetry
-Splunk Integration
-
-Status: Active Development
-
 ────────────────────────────
 </h1>
 
