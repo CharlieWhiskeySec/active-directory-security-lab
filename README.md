@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/64cb0f2a-5973-4d05-aa31-f3b75e3ec04e" width="250">
+  <img src="https://github.com/user-attachments/assets/64cb0f2a-5973-4d05-aa31-f3b75e3ec04e" width="325">
 </p>
 
 # Active Directory Security Lab
