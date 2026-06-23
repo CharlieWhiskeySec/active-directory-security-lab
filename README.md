@@ -8,19 +8,20 @@ Active Directory Security Lab
 
 ## Overview
 
-This project documents my Active Directory home lab, built to develop hands-on experience with enterprise identity infrastructure, Windows event logging, and Splunk-based security monitoring.
+This project documents the design, implementation, and ongoing development of a Windows Active Directory environment built to simulate enterprise identity infrastructure and security operations. The lab serves as the foundation for security monitoring, detection engineering, and investigation projects using Splunk Enterprise.
 
-The environment serves as the foundation for my SIEM engineering and detection engineering projects, allowing me to simulate authentication activity, collect Windows Security logs, build SPL searches, create dashboards, and develop real-world detection use cases.
+Rather than focusing solely on Active Directory administration, this environment is designed to generate realistic Windows security telemetry that can be collected, analyzed, and investigated in a SIEM. As additional security controls and detections are implemented, this repository documents the underlying infrastructure that supports those projects.
 
 ---
 
 ## Objectives
 
-- Build and administer an Active Directory domain
-- Generate Windows Security events for analysis
-- Forward logs into Splunk Enterprise
-- Practice SIEM engineering and detection development
-- Create dashboards, reports, and investigations based on real telemetry
+- Design an enterprise-style Active Directory environment.
+- Implement Organizational Units (OUs) and security groups based on business functions.
+- Configure Group Policy to enforce security settings.
+- Simulate identity lifecycle operations including user provisioning, group management, authentication, and account lockouts.
+- Forward Windows Security logs to Splunk Enterprise for monitoring and detection engineering.
+- Document engineering decisions, troubleshooting, and lessons learned throughout the build process.
 
 ---
 
@@ -36,11 +37,24 @@ The environment serves as the foundation for my SIEM engineering and detection e
 
 ---
 
-## Skills Demonstrated
+## Current Features
 
-- Active Directory administration
-- Windows Event Log analysis
-- Splunk SPL
-- Dashboard development
-- Authentication monitoring
-- Detection engineering
+- Active Directory domain services
+- Organizational Unit structure
+- Security group implementation
+- Role-based access control (RBAC)
+- Shared folder permissions
+- Windows Security Event forwarding
+- Sysmon telemetry collection
+- Account Lockout Policy implementation
+- Splunk integration
+
+---
+
+## Future Enhancements
+- Additional Group Policy security controls
+- Windows Defender logging
+- PowerShell logging
+- Centralized dashboarding
+- Threat hunting scenarios
+- Detection engineering integrations
