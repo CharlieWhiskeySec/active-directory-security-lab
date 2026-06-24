@@ -106,7 +106,7 @@ The environment is designed to generate realistic Windows security telemetry tha
 - Detection tuning
 - Security investigations
 
-- ## Related Projects
+## Related Projects
 
 - [Splunk Detection Engineering](https://github.com/CharlieWhiskeySec/splunk-detections)
 - [SOC Investigations](https://github.com/CharlieWhiskeySec/soc-investigations)
