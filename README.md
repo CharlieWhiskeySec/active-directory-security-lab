@@ -8,9 +8,9 @@ Active Directory Security Lab
 
 ## Contents
 
-- Overview
-- Why This Project
-- Objectives
+- ## Overview
+- ## Why This Project
+- ## Objectives
 - Environment
 - Current Features
 - Future Enhancements
