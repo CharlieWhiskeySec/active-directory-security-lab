@@ -69,7 +69,7 @@ Rather than focusing solely on Active Directory administration, this environment
 
 ---
 
-## Current Project Status
+## Project Status
 
 ### Completed
 
