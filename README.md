@@ -6,6 +6,25 @@
 Active Directory Security Lab
 </h1>
 
+## Contents
+
+- Overview
+- Why This Project
+- Objectives
+- Environment
+- Current Features
+- Future Enhancements
+- Project Status
+- Related Projects
+
+## Overview
+
+This project documents the design, implementation, and ongoing development of a Windows Active Directory environment built to simulate enterprise identity infrastructure and security operations. The lab serves as the foundation for security monitoring, detection engineering, and investigation projects using Splunk Enterprise.
+
+Rather than focusing solely on Active Directory administration, this environment is designed to generate realistic Windows security telemetry that can be collected, analyzed, and investigated in a SIEM. As additional security controls and detections are implemented, this repository documents the underlying infrastructure that supports those projects.
+
+---
+
 ## Why This Project
 
 Many Active Directory home labs focus primarily on administration tasks such as creating users, configuring Group Policy, or managing permissions.
@@ -13,12 +32,6 @@ Many Active Directory home labs focus primarily on administration tasks such as 
 This project takes a different approach.
 
 The environment is designed to generate realistic Windows security telemetry that supports detection engineering, security monitoring, and incident investigation using Splunk Enterprise. Every configuration change, authentication event, and security control implemented within the lab serves as the foundation for additional security engineering projects documented throughout this GitHub portfolio.
-
-## Overview
-
-This project documents the design, implementation, and ongoing development of a Windows Active Directory environment built to simulate enterprise identity infrastructure and security operations. The lab serves as the foundation for security monitoring, detection engineering, and investigation projects using Splunk Enterprise.
-
-Rather than focusing solely on Active Directory administration, this environment is designed to generate realistic Windows security telemetry that can be collected, analyzed, and investigated in a SIEM. As additional security controls and detections are implemented, this repository documents the underlying infrastructure that supports those projects.
 
 ---
 
