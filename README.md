@@ -66,3 +66,30 @@ Rather than focusing solely on Active Directory administration, this environment
 - Centralized dashboarding
 - Threat hunting scenarios
 - Detection engineering integrations
+
+---
+
+## Current Project Status
+
+### Completed
+
+- Active Directory deployment
+- Organizational Unit design
+- Role-Based Access Control (RBAC)
+- Windows Security log forwarding
+- Splunk Enterprise integration
+- Sysmon deployment
+- Account Lockout Policy implementation
+
+### In Progress
+
+- Authentication detection engineering
+- Splunk dashboards
+- Security event documentation
+
+### Planned
+
+- Process monitoring
+- Threat hunting scenarios
+- Detection tuning
+- Security investigations
