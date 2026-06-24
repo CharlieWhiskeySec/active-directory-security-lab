@@ -6,12 +6,9 @@
 Active Directory Security Lab
 </h1>
 
-<p align="center">
 ![Platform](https://img.shields.io/badge/Windows-Server%202022-blue)
-![SIEM](https://img.shields.io/badge/SIEM-Splunk%20Enterprise-green)
+![SIEM](https://img.shields.io/badge/SIEM-Splunk-success)
 ![Hypervisor](https://img.shields.io/badge/VirtualBox-Lab-lightgrey)
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
-</p>
 
 ## Why This Project
 
