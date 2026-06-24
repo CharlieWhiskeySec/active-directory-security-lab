@@ -8,14 +8,13 @@ Active Directory Security Lab
 
 ## Contents
 
-- ## Overview
-- ## Why This Project
-- ## Objectives
-- Environment
-- Current Features
-- Future Enhancements
-- Project Status
-- Related Projects
+- [Overview](#overview)
+- [Why This Project](#why-this-project)
+- [Objectives](#objectives)
+- [Lab Environment](#lab-environment)
+- [Current Features](#current-features)
+- [Project Status](#project-status)
+- [Related Projects](#related-projects)
 
 ## Overview
 
