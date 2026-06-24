@@ -93,3 +93,9 @@ Rather than focusing solely on Active Directory administration, this environment
 - Threat hunting scenarios
 - Detection tuning
 - Security investigations
+
+- ## Related Projects
+
+- [Splunk Detection Engineering](https://github.com/CharlieWhiskeySec/splunk-detections)
+- [SOC Investigations](https://github.com/CharlieWhiskeySec/soc-investigations)
+- [Traffic Analysis](https://github.com/CharlieWhiskeySec/traffic-analysis)
