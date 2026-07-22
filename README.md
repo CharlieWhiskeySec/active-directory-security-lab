@@ -64,8 +64,9 @@ Security telemetry generation for SIEM monitoring and detection engineering
 
 ## Architecture
 
-The Active Directory environment provides the core identity and authentication services for the Charlie Whiskey Security Labs enterprise. Domain services support centralized account management, policy enforcement, and authentication across enterprise systems while generating the security telemetry used throughout the rest of the environment.
+The Active Directory environment serves as the identity foundation of **Charlie Whiskey Security Labs (CWSL)**. Domain services provide centralized authentication, authorization, policy enforcement, and identity management while supporting enterprise security monitoring through Windows Event Logging and Sysmon telemetry.
 
+```text
                     Charlie Whiskey Security Labs
                                │
         ┌──────────────────────┴──────────────────────┐
@@ -81,30 +82,32 @@ The Active Directory environment provides the core identity and authentication s
  User Authentication
  Group Policy
  RBAC
+```
 
-As the enterprise expands, this architecture will incorporate additional Windows systems, hybrid identity with Microsoft Entra ID, endpoint protection, security automation, and cloud-based security services.
+As the enterprise evolves, this architecture will expand to include hybrid identity, additional Windows systems, endpoint protection, security automation, and cloud security services.
 
 ---
 
-## Current Features
+## Current Capabilities
 
 The Active Directory environment currently provides the following enterprise capabilities:
 
-Active Directory Domain Services (AD DS)
-DNS services for enterprise name resolution
-Organizational Unit (OU) hierarchy aligned with business departments
-Enterprise user, group, and computer account management
-Role-Based Access Control (RBAC) using security groups
-Group Policy Objects (GPOs) for centralized configuration and security enforcement
-Windows authentication and authorization
-Enterprise account lifecycle management
-Windows security event generation for SIEM monitoring
-Sysmon telemetry collection for security investigations
+- Active Directory Domain Services (AD DS)
+- DNS services for enterprise name resolution
+- Organizational Unit (OU) hierarchy aligned with business departments
+- Enterprise user, group, and computer account management
+- Role-Based Access Control (RBAC) using security groups
+- Group Policy Objects (GPOs) for centralized configuration and security enforcement
+- Windows authentication and authorization
+- Enterprise account lifecycle management
+- Windows security event generation for Splunk enterprise
+- Sysmon telemetry collection for security investigations
 
 ---
 
 ## Project Structure
 
+```text
 active-directory-security-lab/
 ├── docs/
 │   ├── architecture/
@@ -116,29 +119,33 @@ active-directory-security-lab/
 ├── images/
 ├── scripts/
 └── README.md
-Repository Contents
-docs/ — Technical documentation covering the Active Directory environment, configuration, and security implementation.
-images/ — Architecture diagrams, screenshots, and supporting visuals.
-scripts/ — PowerShell scripts and automation used throughout the environment.
-README.md — Project overview, architecture, objectives, and deployment information.
+```
 
+### Repository Contents
+
+- **docs/** — Technical documentation covering the Active Directory environment, configuration, and security implementation.
+- **images/** — Architecture diagrams, screenshots, and supporting visuals.
+- **scripts/** — PowerShell scripts and automation used throughout the environment.
+- **README.md** — Project overview, architecture, objectives, deployment details, and project status.
 ---
 
 ## Project Status
 
-Component	Status
-Active Directory Domain Services	✅ Operational
-DNS	✅ Operational
-Organizational Unit Structure	✅ Complete
-Users & Groups	✅ Complete
-Role-Based Access Control (RBAC)	✅ Operational
-Group Policy	✅ Operational
-Windows 11 Enterprise Client	✅ Operational
-Sysmon Telemetry	✅ Operational
-Splunk Integration	✅ Operational
-Enterprise Documentation	🚧 In Progress
-Hybrid Identity (Entra ID)	📅 Planned
-Windows Event Forwarding	📅 Planned
+| Component | Status |
+|-----------|:------:|
+| Active Directory Domain Services | ✅ Operational |
+| DNS Services | ✅ Operational |
+| Organizational Unit Structure | ✅ Operational |
+| Users & Groups | ✅ Operational |
+| Role-Based Access Control (RBAC) | ✅ Operational |
+| Group Policy | ✅ Operational |
+| Windows Security Event Logging | ✅ Operational |
+| Sysmon Telemetry | ✅ Operational |
+| Splunk Enterprise Integration | ✅ Operational |
+| Enterprise Documentation | 🚧 In Progress |
+| Hybrid Identity (Microsoft Entra ID) | 📅 Planned |
+| Enterprise PKI | 📅 Planned |
+| Windows Defender Integration | 📅 Planned |
 
 ---
 
