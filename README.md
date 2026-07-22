@@ -15,9 +15,14 @@ https://github.com/CharlieWhiskeySec/charlie-whiskey-security-labs
 
 ## Overview
 
-This project documents the design, implementation, and ongoing development of a Windows Active Directory environment built to simulate enterprise identity infrastructure and security operations. The lab serves as the foundation for security monitoring, detection engineering, and investigation projects using Splunk Enterprise.
+## Overview
 
-Rather than focusing solely on Active Directory administration, this environment is designed to generate realistic Windows security telemetry that can be collected, analyzed, and investigated in a SIEM. As additional security controls and detections are implemented, this repository documents the underlying infrastructure that supports those projects.
+The **Active Directory Security Lab** serves as the identity foundation of **Charlie Whiskey Security Labs (CWSL)**, a fictional enterprise built to simulate a modern organization's security infrastructure and operations.
+
+This repository documents the design, deployment, and ongoing development of the enterprise's Active Directory environment, including identity management, organizational structure, role-based access control, Group Policy, and Windows security administration.
+
+The environment is designed to provide a realistic platform for hands-on security engineering, enabling other enterprise projects—including SIEM monitoring, detection engineering, incident response, and future hybrid identity initiatives—to operate within a centralized and consistently managed domain.
+
 
 ---
 
