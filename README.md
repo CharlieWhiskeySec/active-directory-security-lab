@@ -1,168 +1,175 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/02a7bd81-ee10-4cf1-aef9-c0649a03a4ea" width="200">
 </p>
-<br>
 
-# Active Directory Security Lab
+<p align="center">
+  <img src="images/banner.png" alt="Active Directory Security Lab Banner">
+</p>
 
-> **Part of the Charlie Whiskey Security Labs Enterprise**
+<h1 align="center">Active Directory Security Lab</h1>
 
-This repository documents the Active Directory infrastructure supporting Charlie Whiskey Security Labs (CWSL).
+<p align="center">
+  <strong>Part of the Charlie Whiskey Security Labs Enterprise</strong><br>
+  Enterprise Identity • Authentication • Authorization • Group Policy • RBAC
+</p>
 
-🏢 **Enterprise Hub**
-https://github.com/CharlieWhiskeySec/charlie-whiskey-security-labs
-
----
-
-## Overview
-
-The **Active Directory Security Lab** serves as the identity foundation of **Charlie Whiskey Security Labs (CWSL)**, a fictional enterprise built to simulate a modern organization's security infrastructure and operations.
-
-This repository documents the design, deployment, and ongoing development of the enterprise's Active Directory environment, including identity management, organizational structure, role-based access control, Group Policy, and Windows security administration.
-
-The environment is designed to provide a realistic platform for hands-on security engineering, enabling other enterprise projects—including SIEM monitoring, detection engineering, incident response, and future hybrid identity initiatives—to operate within a centralized and consistently managed domain.
+<p align="center">
+  🏢 <a href="https://github.com/CharlieWhiskeySec/charlie-whiskey-security-labs"><strong>Enterprise Hub</strong></a>
+</p>
 
 ---
 
-## Objectives
+# Overview
+
+The **Active Directory Security Lab** serves as the enterprise identity platform for **Charlie Whiskey Security Labs (CWSL)**.
+
+This environment provides centralized authentication, authorization, Group Policy administration, and Role-Based Access Control (RBAC) while generating Windows security telemetry consumed by Splunk Enterprise for detection engineering and security investigations.
+
+---
+
+# Objectives
 
 - Design and deploy a realistic enterprise Active Directory environment.
-- Implement organizational units, users, groups, and role-based access control that reflect a modern business.
-- Configure and manage Group Policy to enforce enterprise security standards.
-- Generate realistic Windows authentication and security telemetry for SIEM monitoring and detection engineering.
-- Support hands-on security investigations through controlled user activity and administrative operations.
-- Establish a scalable identity platform for future enterprise services, including hybrid identity, endpoint management, and cloud security initiatives.
+- Implement organizational units, users, groups, and role-based access control.
+- Centralize authentication and authorization.
+- Enforce enterprise security policies through Group Policy.
+- Generate Windows Security and Sysmon telemetry for SIEM monitoring.
+- Provide the identity foundation for enterprise security engineering projects.
 
 ---
 
-## Enterprise Role
+# Enterprise Role
 
-Within Charlie Whiskey Security Labs (CWSL), Active Directory serves as the central identity platform for the enterprise. It provides the authentication, authorization, and administrative foundation that supports every connected system and security project.
+Within Charlie Whiskey Security Labs, Active Directory provides:
 
-Key responsibilities include:
-
-Centralized authentication and authorization
-Organizational Unit (OU) and account management
-Role-Based Access Control (RBAC)
-Group Policy administration and security enforcement
-Windows endpoint identity management
-Enterprise user, group, and computer lifecycle management
-Security telemetry generation for SIEM monitoring and detection engineering
+- Enterprise authentication
+- Identity lifecycle management
+- Organizational Unit administration
+- Role-Based Access Control (RBAC)
+- Group Policy administration
+- Windows endpoint management
+- Enterprise security telemetry
 
 ---
 
-## Environment
+# Environment
 
-| Component | Technology |
-|-----------|------------|
-| Domain Controller | Windows Server |
-| Endpoint | Windows 10 |
+| Component | Details |
+|-----------|---------|
+| Enterprise | Charlie Whiskey Security Labs |
+| Platform | Oracle VirtualBox |
+| Domain Controller | Windows Server 2022 |
+| Client | Windows 11 Enterprise |
 | SIEM | Splunk Enterprise |
-| Attacker VM | Kali Linux |
-| Hypervisor | VirtualBox |
+| Monitoring | Sysmon, Windows Event Logs |
+| Supporting Systems | Ubuntu Server, Kali Linux |
 
 ---
 
-## Architecture
-
-The Active Directory environment serves as the identity foundation of **Charlie Whiskey Security Labs (CWSL)**. Domain services provide centralized authentication, authorization, policy enforcement, and identity management while supporting enterprise security monitoring through Windows Event Logging and Sysmon telemetry.
+# Enterprise Architecture
 
 ```text
                     Charlie Whiskey Security Labs
                                │
-        ┌──────────────────────┴──────────────────────┐
-        │                                             │
-   Windows Server 2022                         Ubuntu Server
-  Active Directory & DNS                    Splunk Enterprise
-        │                                             ▲
-        │                                             │
-        ▼                                             │
- Windows 11 Enterprise ─────── Sysmon & Event Logs ───┘
-        │
-        ▼
- User Authentication
- Group Policy
- RBAC
+                 ┌─────────────┴─────────────┐
+                 │                           │
+        Identity Services            Security Operations
+                 │                           │
+        Windows Server 2022          Splunk Enterprise
+        Active Directory & DNS              ▲
+                 │                          │
+                 │                          │
+      ┌──────────┴──────────┐               │
+      │                     │               │
+Windows 11 Enterprise   Future Systems      │
+      │                                     │
+      └──── Sysmon & Windows Event Logs ────┘
 ```
 
-As the enterprise evolves, this architecture will expand to include hybrid identity, additional Windows systems, endpoint protection, security automation, and cloud security services.
-
 ---
 
-## Current Capabilities
-
-The Active Directory environment currently provides the following enterprise capabilities:
+# Current Capabilities
 
 - Active Directory Domain Services (AD DS)
-- DNS services for enterprise name resolution
-- Organizational Unit (OU) hierarchy aligned with business departments
-- Enterprise user, group, and computer account management
-- Role-Based Access Control (RBAC) using security groups
-- Group Policy Objects (GPOs) for centralized configuration and security enforcement
+- DNS services
+- Organizational Unit hierarchy
+- Enterprise user, group, and computer management
+- Role-Based Access Control (RBAC)
+- Group Policy administration
 - Windows authentication and authorization
 - Enterprise account lifecycle management
-- Windows security event generation for Splunk enterprise
-- Sysmon telemetry collection for security investigations
+- Windows Security Event generation
+- Sysmon telemetry collection
+- Splunk Enterprise integration
 
 ---
 
-## Project Structure
+# Project Structure
 
 ```text
 active-directory-security-lab/
 ├── docs/
-│   ├── architecture/
-│   ├── configuration/
-│   ├── group-policy/
-│   ├── organizational-units/
-│   ├── security-groups/
-│   └── users/
 ├── images/
 ├── scripts/
 └── README.md
 ```
 
-### Repository Contents
+| Folder | Purpose |
+|---------|---------|
+| docs | Technical documentation |
+| images | Screenshots, diagrams, and graphics |
+| scripts | PowerShell automation |
+| README.md | Project overview |
 
-- **docs/** — Technical documentation covering the Active Directory environment, configuration, and security implementation.
-- **images/** — Architecture diagrams, screenshots, and supporting visuals.
-- **scripts/** — PowerShell scripts and automation used throughout the environment.
-- **README.md** — Project overview, architecture, objectives, deployment details, and project status.
 ---
 
-## Project Status
+# Project Status
 
 | Component | Status |
 |-----------|:------:|
 | Active Directory Domain Services | ✅ Operational |
-| DNS Services | ✅ Operational |
+| DNS | ✅ Operational |
 | Organizational Unit Structure | ✅ Operational |
 | Users & Groups | ✅ Operational |
-| Role-Based Access Control (RBAC) | ✅ Operational |
+| RBAC | ✅ Operational |
 | Group Policy | ✅ Operational |
-| Windows Security Event Logging | ✅ Operational |
+| Windows Event Logging | ✅ Operational |
 | Sysmon Telemetry | ✅ Operational |
-| Splunk Enterprise Integration | ✅ Operational |
+| Splunk Integration | ✅ Operational |
 | Enterprise Documentation | 🚧 In Progress |
-| Hybrid Identity (Microsoft Entra ID) | 📅 Planned |
+| Hybrid Identity | 📅 Planned |
 | Enterprise PKI | 📅 Planned |
-| Windows Defender Integration | 📅 Planned |
+| Microsoft Defender | 📅 Planned |
 
 ---
 
-## Enterprise Expansion
+# Future Enhancements
 
-- Hybrid Identity (Entra ID)
-- Additional Windows Workstations
-- Additional Servers
-- Tiered Administration
+- Microsoft Entra ID
+- Hybrid Identity
 - Windows Event Forwarding
 - Enterprise PKI
+- Microsoft Defender
+- Security Automation
+- Additional Enterprise Workstations
+- Tiered Administration
 
-## Related Enterprise Projects
+---
 
-- Charlie Whiskey Security Labs
-- Splunk Detection Engineering
-- SOC Investigations
-- Traffic Analysis
+# Related Enterprise Projects
+
+| Repository | Description |
+|------------|-------------|
+| 🏢 Charlie Whiskey Security Labs | Enterprise documentation and architecture |
+| 📊 Splunk Detections | Detection engineering and SIEM |
+| 🔍 SOC Investigations | Security investigations and incident response |
+| 🌐 Traffic Analysis | Network monitoring and packet analysis |
+
+---
+
+<p align="center">
+
+Built as part of the **Charlie Whiskey Security Labs** enterprise.
+
+</p>
 
