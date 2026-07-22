@@ -1,6 +1,12 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/02a7bd81-ee10-4cf1-aef9-c0649a03a4ea" width="200">
 </p>
+> **Part of the Charlie Whiskey Security Labs Enterprise**
+
+This repository documents the Active Directory infrastructure supporting **Charlie Whiskey Security Labs (CWSL)**. It serves as the identity foundation for the enterprise, providing centralized authentication, authorization, organizational structure, and security administration for all connected systems.
+
+🏢 **Enterprise Hub:**  
+https://github.com/CharlieWhiskeySec/charlie-whiskey-security-labs
 
 <h1 align="center">
 Active Directory Security Lab
