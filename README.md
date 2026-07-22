@@ -2,10 +2,6 @@
   <img src="https://github.com/user-attachments/assets/02a7bd81-ee10-4cf1-aef9-c0649a03a4ea" width="200">
 </p>
 
-<p align="center">
-  <img src="images/banner.png" alt="Active Directory Security Lab Banner">
-</p>
-
 <h1 align="center">Active Directory Security Lab</h1>
 
 <p align="center">
