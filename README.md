@@ -25,25 +25,28 @@ The environment is designed to provide a realistic platform for hands-on securit
 
 ## Objectives
 
-- Design an enterprise-style Active Directory environment.
-- Implement Organizational Units (OUs) and security groups based on business functions.
-- Configure Group Policy to enforce security settings.
-- Simulate identity lifecycle operations including user provisioning, group management, authentication, and account lockouts.
-- Forward Windows Security logs to Splunk Enterprise for monitoring and detection engineering.
-- Document engineering decisions, troubleshooting, and lessons learned throughout the build process.
+- Design and deploy a realistic enterprise Active Directory environment.
+- Implement organizational units, users, groups, and role-based access control that reflect a modern business.
+- Configure and manage Group Policy to enforce enterprise security standards.
+- Generate realistic Windows authentication and security telemetry for SIEM monitoring and detection engineering.
+- Support hands-on security investigations through controlled user activity and administrative operations.
+- Establish a scalable identity platform for future enterprise services, including hybrid identity, endpoint management, and cloud security initiatives.
 
 ---
 
 ## Enterprise Role
 
-Within Charlie Whiskey Security Labs, Active Directory provides:
+Within Charlie Whiskey Security Labs (CWSL), Active Directory serves as the central identity platform for the enterprise. It provides the authentication, authorization, and administrative foundation that supports every connected system and security project.
 
-- Centralized identity management
-- Authentication and authorization
-- Organizational Unit administration
-- Group-based access control
-- Security policy enforcement
-- Windows endpoint management
+Key responsibilities include:
+
+Centralized authentication and authorization
+Organizational Unit (OU) and account management
+Role-Based Access Control (RBAC)
+Group Policy administration and security enforcement
+Windows endpoint identity management
+Enterprise user, group, and computer lifecycle management
+Security telemetry generation for SIEM monitoring and detection engineering
 
 ---
 
@@ -61,27 +64,81 @@ Within Charlie Whiskey Security Labs, Active Directory provides:
 
 ## Architecture
 
+The Active Directory environment provides the core identity and authentication services for the Charlie Whiskey Security Labs enterprise. Domain services support centralized account management, policy enforcement, and authentication across enterprise systems while generating the security telemetry used throughout the rest of the environment.
+
+                    Charlie Whiskey Security Labs
+                               │
+        ┌──────────────────────┴──────────────────────┐
+        │                                             │
+   Windows Server 2022                         Ubuntu Server
+  Active Directory & DNS                    Splunk Enterprise
+        │                                             ▲
+        │                                             │
+        ▼                                             │
+ Windows 11 Enterprise ─────── Sysmon & Event Logs ───┘
+        │
+        ▼
+ User Authentication
+ Group Policy
+ RBAC
+
+As the enterprise expands, this architecture will incorporate additional Windows systems, hybrid identity with Microsoft Entra ID, endpoint protection, security automation, and cloud-based security services.
+
 ---
 
 ## Current Features
 
-- Active Directory domain services
-- Organizational Unit structure
-- Security group implementation
-- Role-based access control (RBAC)
-- Shared folder permissions
-- Windows Security Event forwarding
-- Sysmon telemetry collection
-- Account Lockout Policy implementation
-- Splunk integration
+The Active Directory environment currently provides the following enterprise capabilities:
+
+Active Directory Domain Services (AD DS)
+DNS services for enterprise name resolution
+Organizational Unit (OU) hierarchy aligned with business departments
+Enterprise user, group, and computer account management
+Role-Based Access Control (RBAC) using security groups
+Group Policy Objects (GPOs) for centralized configuration and security enforcement
+Windows authentication and authorization
+Enterprise account lifecycle management
+Windows security event generation for SIEM monitoring
+Sysmon telemetry collection for security investigations
 
 ---
 
 ## Project Structure
 
+active-directory-security-lab/
+├── docs/
+│   ├── architecture/
+│   ├── configuration/
+│   ├── group-policy/
+│   ├── organizational-units/
+│   ├── security-groups/
+│   └── users/
+├── images/
+├── scripts/
+└── README.md
+Repository Contents
+docs/ — Technical documentation covering the Active Directory environment, configuration, and security implementation.
+images/ — Architecture diagrams, screenshots, and supporting visuals.
+scripts/ — PowerShell scripts and automation used throughout the environment.
+README.md — Project overview, architecture, objectives, and deployment information.
+
 ---
 
-## Current Status
+## Project Status
+
+Component	Status
+Active Directory Domain Services	✅ Operational
+DNS	✅ Operational
+Organizational Unit Structure	✅ Complete
+Users & Groups	✅ Complete
+Role-Based Access Control (RBAC)	✅ Operational
+Group Policy	✅ Operational
+Windows 11 Enterprise Client	✅ Operational
+Sysmon Telemetry	✅ Operational
+Splunk Integration	✅ Operational
+Enterprise Documentation	🚧 In Progress
+Hybrid Identity (Entra ID)	📅 Planned
+Windows Event Forwarding	📅 Planned
 
 ---
 
