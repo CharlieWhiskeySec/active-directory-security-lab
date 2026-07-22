@@ -21,6 +21,30 @@ Rather than focusing solely on Active Directory administration, this environment
 
 ---
 
+## Objectives
+
+- Design an enterprise-style Active Directory environment.
+- Implement Organizational Units (OUs) and security groups based on business functions.
+- Configure Group Policy to enforce security settings.
+- Simulate identity lifecycle operations including user provisioning, group management, authentication, and account lockouts.
+- Forward Windows Security logs to Splunk Enterprise for monitoring and detection engineering.
+- Document engineering decisions, troubleshooting, and lessons learned throughout the build process.
+
+---
+
+## Enterprise Role
+
+Within Charlie Whiskey Security Labs, Active Directory provides:
+
+- Centralized identity management
+- Authentication and authorization
+- Organizational Unit administration
+- Group-based access control
+- Security policy enforcement
+- Windows endpoint management
+
+---
+
 ## Environment
 
 | Component | Technology |
@@ -33,24 +57,9 @@ Rather than focusing solely on Active Directory administration, this environment
 
 ---
 
-## Why This Project
-
-Many Active Directory home labs focus primarily on administration tasks such as creating users, configuring Group Policy, or managing permissions.
-
-This project takes a different approach.
-
-The environment is designed to generate realistic Windows security telemetry that supports detection engineering, security monitoring, and incident investigation using Splunk Enterprise. Every configuration change, authentication event, and security control implemented within the lab serves as the foundation for additional security engineering projects documented throughout this GitHub portfolio.
+## Architecture
 
 ---
-
-## Objectives
-
-- Design an enterprise-style Active Directory environment.
-- Implement Organizational Units (OUs) and security groups based on business functions.
-- Configure Group Policy to enforce security settings.
-- Simulate identity lifecycle operations including user provisioning, group management, authentication, and account lockouts.
-- Forward Windows Security logs to Splunk Enterprise for monitoring and detection engineering.
-- Document engineering decisions, troubleshooting, and lessons learned throughout the build process.
 
 ## Current Features
 
@@ -66,43 +75,27 @@ The environment is designed to generate realistic Windows security telemetry tha
 
 ---
 
-## Future Enhancements
-- Additional Group Policy security controls
-- Windows Defender logging
-- PowerShell logging
-- Centralized dashboarding
-- Threat hunting scenarios
-- Detection engineering integrations
+## Project Structure
 
 ---
 
-## Project Status
+## Current Status
 
-### Completed
+---
 
-- Active Directory deployment
-- Organizational Unit design
-- Role-Based Access Control (RBAC)
-- Windows Security log forwarding
-- Splunk Enterprise integration
-- Sysmon deployment
-- Account Lockout Policy implementation
+## Enterprise Expansion
 
-### In Progress
+- Hybrid Identity (Entra ID)
+- Additional Windows Workstations
+- Additional Servers
+- Tiered Administration
+- Windows Event Forwarding
+- Enterprise PKI
 
-- Authentication detection engineering
-- Splunk dashboards
-- Security event documentation
+## Related Enterprise Projects
 
-### Planned
+- Charlie Whiskey Security Labs
+- Splunk Detection Engineering
+- SOC Investigations
+- Traffic Analysis
 
-- Process monitoring
-- Threat hunting scenarios
-- Detection tuning
-- Security investigations
-
-## Related Projects
-
-- [Splunk Detection Engineering](https://github.com/CharlieWhiskeySec/splunk-detections)
-- [SOC Investigations](https://github.com/CharlieWhiskeySec/soc-investigations)
-- [Traffic Analysis](https://github.com/CharlieWhiskeySec/traffic-analysis)
