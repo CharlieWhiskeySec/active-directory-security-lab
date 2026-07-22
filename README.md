@@ -4,7 +4,7 @@
 <br>
 
 <h1 align="center">
-Active Directory Security Lab
+Enterprise Active Directory Infrastructure
 </h1>
 > **Part of the Charlie Whiskey Security Labs Enterprise**
 
@@ -13,22 +13,23 @@ This repository documents the Active Directory infrastructure supporting **Charl
 🏢 **Enterprise Hub:**  
 https://github.com/CharlieWhiskeySec/charlie-whiskey-security-labs
 
-
-## Contents
-
-- [Overview](#overview)
-- [Why This Project](#why-this-project)
-- [Objectives](#objectives)
-- [Lab Environment](#lab-environment)
-- [Current Features](#current-features)
-- [Project Status](#project-status)
-- [Related Projects](#related-projects)
-
 ## Overview
 
 This project documents the design, implementation, and ongoing development of a Windows Active Directory environment built to simulate enterprise identity infrastructure and security operations. The lab serves as the foundation for security monitoring, detection engineering, and investigation projects using Splunk Enterprise.
 
 Rather than focusing solely on Active Directory administration, this environment is designed to generate realistic Windows security telemetry that can be collected, analyzed, and investigated in a SIEM. As additional security controls and detections are implemented, this repository documents the underlying infrastructure that supports those projects.
+
+---
+
+## Environment
+
+| Component | Technology |
+|-----------|------------|
+| Domain Controller | Windows Server |
+| Endpoint | Windows 10 |
+| SIEM | Splunk Enterprise |
+| Attacker VM | Kali Linux |
+| Hypervisor | VirtualBox |
 
 ---
 
@@ -50,20 +51,6 @@ The environment is designed to generate realistic Windows security telemetry tha
 - Simulate identity lifecycle operations including user provisioning, group management, authentication, and account lockouts.
 - Forward Windows Security logs to Splunk Enterprise for monitoring and detection engineering.
 - Document engineering decisions, troubleshooting, and lessons learned throughout the build process.
-
----
-
-## Environment
-
-| Component | Technology |
-|-----------|------------|
-| Domain Controller | Windows Server |
-| Endpoint | Windows 10 |
-| SIEM | Splunk Enterprise |
-| Attacker VM | Kali Linux |
-| Hypervisor | VirtualBox |
-
----
 
 ## Current Features
 
