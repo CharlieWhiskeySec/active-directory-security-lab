@@ -3,15 +3,16 @@
 </p>
 <br>
 
-<h1 align="center">
-Enterprise Active Directory Infrastructure
-</h1>
-**Part of the Charlie Whiskey Security Labs Enterprise**
+# Active Directory Security Lab
 
-This repository documents the Active Directory infrastructure supporting **Charlie Whiskey Security Labs (CWSL)**. It serves as the identity foundation for the enterprise, providing centralized authentication, authorization, organizational structure, and security administration for all connected systems.
+> **Part of the Charlie Whiskey Security Labs Enterprise**
 
-🏢 **Enterprise Hub:**  
+This repository documents the Active Directory infrastructure supporting Charlie Whiskey Security Labs (CWSL).
+
+🏢 **Enterprise Hub**
 https://github.com/CharlieWhiskeySec/charlie-whiskey-security-labs
+
+---
 
 ## Overview
 
