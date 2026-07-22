@@ -15,14 +15,11 @@ https://github.com/CharlieWhiskeySec/charlie-whiskey-security-labs
 
 ## Overview
 
-## Overview
-
 The **Active Directory Security Lab** serves as the identity foundation of **Charlie Whiskey Security Labs (CWSL)**, a fictional enterprise built to simulate a modern organization's security infrastructure and operations.
 
 This repository documents the design, deployment, and ongoing development of the enterprise's Active Directory environment, including identity management, organizational structure, role-based access control, Group Policy, and Windows security administration.
 
 The environment is designed to provide a realistic platform for hands-on security engineering, enabling other enterprise projects—including SIEM monitoring, detection engineering, incident response, and future hybrid identity initiatives—to operate within a centralized and consistently managed domain.
-
 
 ---
 
